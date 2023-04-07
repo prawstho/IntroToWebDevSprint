@@ -5,6 +5,8 @@ fetch('./people.json')
   .then(data => {
     // Loop through an array in the JSON data
     data.forEach(person => {
+      console.log(getFullName(person));
+      console.log(getAge(person));
       console.log(chooseRoom(person));
     });
   })
@@ -24,4 +26,17 @@ fetch('./people.json')
       default:
         return `${person.fname} should be mindful in choosing a change room.`;
     }
+  }
+
+  function getFullName(person) {
+    return `${person.fname} ${person.lname}`;
+  }
+
+  function getAge(person) {    
+    return `${person.fname} is ${new Date().getFullYear() - 
+      new Date(person.birthday).getFullYear()} years old.`; 
+  }
+
+  function getGender(person){
+    return person.gender;
   }
