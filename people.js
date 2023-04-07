@@ -1,3 +1,4 @@
+const incomeTaxRate = 0.15;
 // FETCH and READ the people.json disk file
 
 fetch('./people.json')
@@ -7,6 +8,7 @@ fetch('./people.json')
     data.forEach(person => {
       console.log(getFullName(person));
       console.log(getAge(person));
+      console.log(getNetIncome(person));
       console.log(chooseRoom(person));
     });
   })
@@ -39,4 +41,16 @@ fetch('./people.json')
 
   function getGender(person){
     return person.gender;
+  }
+
+  function getSalary(person){
+    return person.salary;
+  }
+
+  function getIncomeTax(person){
+    return person.salary * incomeTaxRate;
+  }
+
+  function getNetIncome(person){
+    return `has a yearly salary of ${person.salary - getIncomeTax(person)}.`;
   }

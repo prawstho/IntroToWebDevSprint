@@ -4,34 +4,39 @@
     "lname": "Timberson",
     "gender": "male",
     "birthday": "12/28/1998",
-    "status": "married"
+    "status": "married",
+    "salary": 50000
   },
   {
     "fname": "Kim",
     "lname": "Kimberson",
     "gender": "undisclosed",
     "birthday": "undisclosed",
-    "status": "undisclosed"
+    "status": "undisclosed",
+    "salary": 120000   
   },
   {
     "fname": "Bob",
     "lname": "Robson",
     "gender": "male",
     "birthday": "11/10/2002",
-    "status": "single"
+    "status": "single",
+    "salary": 34000
   },
   {
     "fname": "Sue",
     "lname": "Susanson",
     "gender": "female",
     "birthday": "6/18/1995",
-    "status": "married"
+    "status": "married",
+    "salary": 80000
   },
   {
     "fname": "Leslie",
     "lname": "Leslison",
     "gender": "female",
     "birthday": "9/3/1973",
-    "status": "widowed"
+    "status": "widowed",
+    "salary": 100000
   }
 ]
